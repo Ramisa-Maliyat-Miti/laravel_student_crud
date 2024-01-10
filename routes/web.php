@@ -15,3 +15,6 @@ use App\Http\Controllers\StudentController;
 */
 
 Route::resource('student', StudentController::class);
+Route::delete('/student/{id}', 'StudentController@destroy')->name('student.destroy');
+
+

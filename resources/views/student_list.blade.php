@@ -55,13 +55,13 @@
         <td colspan="2">
                    <center>
         <form action="{{ route('student.destroy',$student->id) }}" method="POST">
-     
+         @csrf
                     
       
-     <a class="btn btn-primary" href="{{ route('student.edit',$student->id) }}">Edit</a>
+        <a class="btn btn-primary" href="{{ route('student.edit',$student->id) }}">Edit</a>
 
-     @csrf
-     @method('DELETE')
+         @csrf
+         @method('DELETE')
 
      <button type="submit" class="btn btn-danger">Delete</button>
 
